@@ -9,7 +9,7 @@ env:
   LOCATION: central canada
   TEMPLATE-FILE: infra/webapp.bicep
   SUBSCRIPTION-ID: 8bf2a7a1-409d-455e-b807-80cb05902705
-  WEBAPP-NAME: eshoponweb-webapp-ESHOP-DEV
+  WEBAPP-NAME: eshoponweb-webapp-ESHOPDEV
 
 
 jobs:
@@ -23,7 +23,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '8.0.x'
+        dotnet-version: '9.0.x'
         dotnet-quality: 'preview'
     #Build/Test/Publish the .net project
     - name: Build with dotnet
